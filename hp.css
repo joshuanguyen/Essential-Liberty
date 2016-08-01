@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Avenir';
+	src: url('Avenir.ttc');
+	src: local('Avenir'), url('Avenir.ttc');
+}
+
+
 /* iPhone */
 
 @media only screen and and (max-device-width : 800px)  {
@@ -52,7 +59,7 @@
 		height:100px;
 		margin-top:300px;
 		margin-left:140px;		
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-weight:bold;
 		font-size:60px;
 		text-align:center;
@@ -65,12 +72,41 @@
 		height:100px;
 		margin-top:-40px;
 		margin-left:70px;		
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-weight:light;
 		font-size:20px;
 		text-align:center;
 		color:white;
 	}
+	
+	.button {
+		position:relative;
+		background-color:#2dabf9;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:0px solid #0b0e07;
+		display:inline-block;
+		margin-top:20px;
+		cursor:pointer;
+		color:#ffffff;
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:light;
+		font-size:15px;
+		font-weight:bold;
+		padding:15px 30px;
+		text-decoration:none;
+		text-align:center;
+	}
+	
+	.button:hover {
+		background-color:#0688fa;
+	}
+	.button:active {
+		position:relative;
+		top:1px;
+	}
+
 
 	#footer {
 		position:absolute;
@@ -81,7 +117,7 @@
 	} 
 
 	#footer p {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-size:15px;
 		color:white;
 		text-align:center;
