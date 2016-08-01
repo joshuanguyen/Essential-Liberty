@@ -4,9 +4,9 @@
 	src: local('Avenir'), url('Avenir.ttc');
 }
 
-/* iPhone */
+/* iPhone*/
 
-@media only screen and (max-width : 1024px)  {
+@media only screen and (max-width : 768px)  {
 		
 	html {
          background: url('ELB-mobile.png') #000 no-repeat center center fixed;
@@ -16,13 +16,15 @@
     
 	h1 {
 		color:white;
-		margin-top:200px;
+		margin-top:130px;
 		font-size:40px;
 	}
 	
 	p {
 		color:white;
 		margin-top:-20px;
+		margin-left:30px;
+		width:90%;
 		font-size:15px;
 	}
 	
@@ -58,7 +60,80 @@
 		position:absolute;
 		bottom:0;
 		width:100%;
-		height:50px;
+		height:20px;
+	} 
+	
+	#footer p {
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size:10px;
+		color:white;
+		opacity:.5;
+		text-align:center;
+		font-weight: light;
+	}
+	
+	#bgvideo {
+        display: none;
+    }
+}	
+
+/* iPad*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		
+	html {
+         background: url('ELB-mobile.png') #000 no-repeat center center fixed;
+		 font-family: 'Avenir';
+		 text-align:center;	
+    }
+    
+	h1 {
+		color:white;
+		margin-top:100px;
+		font-size:50px;
+	}
+	
+	p {
+		color:white;
+		margin-top:-25px;
+		margin-left:60px;
+		width:90%;
+		font-size:15px;
+	}
+	
+	.button {
+		position:relative;
+		background-color:#2dabf9;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:0px solid #0b0e07;
+		display:inline-block;
+		margin-top:40px;
+		cursor:pointer;
+		color:#ffffff;
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:light;
+		font-size:15px;
+		font-weight:bold;
+		padding:10px 30px;
+		text-decoration:none;
+		text-align:center;
+	}
+	
+	.button:hover {
+		background-color:#0688fa;
+	}
+	.button:active {
+		position:relative;
+		top:1px;
+	}
+	
+	#footer {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:0px;
 	} 
 	
 	#footer p {
@@ -76,8 +151,9 @@
 }	
 
 
+
 /*Desktop*/
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1024px) {
 		
 	body {
 		margin:0;
