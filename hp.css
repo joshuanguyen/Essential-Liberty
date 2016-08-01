@@ -4,29 +4,88 @@
 	src: local('Avenir'), url('Avenir.ttc');
 }
 
-
 /* iPhone */
 
-@media only screen and and (max-device-width : 800px)  {
-    
+@media only screen and (max-width : 1024px)  {
+		
 	html {
-         background: url('ELB.png') #000 no-repeat center center fixed;
+         background: url('ELB-mobile.png') #000 no-repeat center center fixed;
+		 font-family: 'Avenir';
+		 text-align:center;	
     }
+ 
+ 	body {orient:"portrait";}
     
-	#bgvid {
+	h1 {
+		color:white;
+		margin-top:200px;
+		font-size:40px;
+	}
+	
+	p {
+		color:white;
+		margin-top:-20px;
+		font-size:15px;
+	}
+	
+	.button {
+		position:relative;
+		background-color:#2dabf9;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:0px solid #0b0e07;
+		display:inline-block;
+		margin-top:40px;
+		cursor:pointer;
+		color:#ffffff;
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:light;
+		font-size:15px;
+		font-weight:bold;
+		padding:10px 30px;
+		text-decoration:none;
+		text-align:center;
+	}
+	
+	.button:hover {
+		background-color:#0688fa;
+	}
+	.button:active {
+		position:relative;
+		top:1px;
+	}
+	
+	#footer {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:50px;
+	} 
+	
+	#footer p {
+		font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size:10px;
+		color:white;
+		opacity:.5;
+		text-align:center;
+		font-weight: light;
+	}
+	
+	#bgvideo {
         display: none;
     }
 }	
 
 
 /*Desktop*/
-@media only screen and (min-device-width: 801px) {
+@media only screen and (min-device-width: 1025px) {
 		
 	body {
 		margin:0;
 	}
 	
-	video#bgvideo {
+	#bgvideo {
 		position:fixed;
 		top:50%;
 		left:50%;
@@ -39,11 +98,11 @@
 	    -moz-transform: translateX(-50%) translateY(-50%);
 	    -webkit-transform: translateX(-50%) translateY(-50%);
 	    transform: translateX(-50%) translateY(-50%);
-	    background: url('ELB.png') no-repeat;
+	    background: url(ELB.png) no-repeat;
 	    background-size: cover; 
 	}
 	
-	*#overlay {
+	#overlay {
 		position: fixed;
 		width: 100%;
 		height: 100%;
