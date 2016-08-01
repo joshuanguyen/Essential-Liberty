@@ -10,7 +10,7 @@
 @media only screen and and (max-device-width : 800px)  {
     
 	html {
-         background: url(ELB.png) #000 no-repeat center center fixed;
+         background: url('ELB.png') #000 no-repeat center center fixed;
     }
     
 	#bgvid {
@@ -20,7 +20,7 @@
 
 
 /*Desktop*/
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-device-width: 801px) {
 		
 	body {
 		margin:0;
@@ -39,7 +39,7 @@
 	    -moz-transform: translateX(-50%) translateY(-50%);
 	    -webkit-transform: translateX(-50%) translateY(-50%);
 	    transform: translateX(-50%) translateY(-50%);
-	    background: url(ELB.png) no-repeat;
+	    background: url('ELB.png') no-repeat;
 	    background-size: cover; 
 	}
 	
