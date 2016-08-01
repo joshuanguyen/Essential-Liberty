@@ -1,0 +1,97 @@
+/* iPhone */
+
+@media only screen and and (max-device-width : 800px)  {
+    
+	html {
+         background: url(ELB.png) #000 no-repeat center center fixed;
+    }
+    
+	#bgvid {
+        display: none;
+    }
+}	
+
+
+/*Desktop*/
+@media only screen and (min-device-width: 1025px) {
+		
+	body {
+		margin:0;
+	}
+	
+	video#bgvideo {
+		position: fixed;
+		top:50%;
+		left:50%;
+	    min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+		z-index:-100;
+	    -ms-transform: translateX(-50%) translateY(-50%);
+	    -moz-transform: translateX(-50%) translateY(-50%);
+	    -webkit-transform: translateX(-50%) translateY(-50%);
+	    transform: translateX(-50%) translateY(-50%);
+	    background: url(ELB.png) no-repeat;
+	    background-size: cover; 
+	}
+	
+	*#overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		display: block;
+		/*background-image: url('images/smalldots.png');*/
+		background-repeat: repeat;
+		z-index:0;
+		}
+
+	#overlay h1 {
+		position: relative;
+		width: 80%;
+		height:100px;
+		margin-top:300px;
+		margin-left:140px;		
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:bold;
+		font-size:60px;
+		text-align:center;
+		color:white;
+	}
+	
+	#overlay p {
+		position: relative;
+		width: 90%;
+		height:100px;
+		margin-top:-40px;
+		margin-left:70px;		
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:light;
+		font-size:20px;
+		text-align:center;
+		color:white;
+	}
+
+	#footer {
+		position:absolute;
+		left:50%;
+		bottom:0px;
+		width:500px;
+		margin-left:-250px;
+	} 
+
+	#footer p {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size:15px;
+		color:white;
+		text-align:center;
+		font-weight: light;
+	}
+	
+	#footer a {
+		color:white;
+	}
+}
+
+
+
